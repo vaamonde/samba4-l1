@@ -1,0 +1,33 @@
+Comandos utilizados nesse vídeo: Aula 28 – Configurando o Serviço do SSH
+
+#Verificando o serviço do SSH Server
+sudo service ssh status
+
+#Verificando a porta de conexão do serviço do SSH
+sudo netstat -tupenl | grep 22
+
+#Editando o arquivo de confguração sshd_config
+sudo vim /etc/ssh/sshd_config
+5	Port 22
+9	Protocol 2
+20	ServerKeyBits 1024
+28	PermitRootLogin no <-- alterar no vídeo
+30	AllowUsers vaamonde <-- usuário pemitido
+72	Banner /etc/issue.net <-- no vídeo não fiz a modificação desse arquivo
+73	ClientAliveInterval 60
+74	ClientAliveCountMax 0
+75	ListenAddress 192.168.1.10 <-- nessa opção e somente o IP do Servidor que vai responder a conexão SSH
+
+#Parando e reiniciando o servico do SSH
+sudo service ssh stop
+sudo service ssh start
+
+#Verificando a porta de conexão do serviço do SSH
+sudo netstat -vantupl | grep 22
+
+#Acessando remotamente o servidor de SSH utilizando um Cliente GNU/Linux
+ssh vaamonde@192.168.1.10
+
+#Verificando o usuário logado no servidor
+sudo w
+exit
