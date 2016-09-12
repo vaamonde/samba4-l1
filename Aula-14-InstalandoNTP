@@ -1,0 +1,48 @@
+#Instalação do Serviço de NTP (Network Time Protocol)
+sudo apt-get install ntp
+
+#NÃO ESTÁ NO VÍDEO, DEVE SER FEITO A CRIAÇÃO DO ARQUIVO ntp.drift
+#Criando o arquivo ntp.drift
+sudo touch /var/lib/ntp/ntp.drift
+
+#Editando o arquivo /etc/ntp.conf
+sudo vim /etc/ntp.conf
+
+#NÃO ESTÁ NO VÍDEO, DEVE SER DESCOMENTADO A LINHA 07, RESPONSÁVEL PELO LOG DO NTP
+#Descomentar a linha de número 07:
+07	statsdir /var/log/ntpstats
+
+#Alterações dos servidores publicos do projeto ntp.br
+23	server a.st1.ntp.br iburst
+24	server b.st1.ntp.br iburst
+25	server c.st1.ntp.br iburst
+26	server d.st1.ntp.br iburst
+
+#Servidores de backup e fallback
+30	server a.ntp.br iburst
+31	server b.ntp.br iburst
+32	server c.ntp.br iburst
+
+#Desabilitar o monitoramento do NTP, indicado pelo NTP.br
+63	disable monitor
+
+#Salvar e sair do editor VIM
+ESC
+Shift : x
+
+#Comandos de verificação do Serviço do NTP
+#Parando, iniciando e vendo o status do serviço
+sudo service ntp stop
+sudo service ntp start
+sudo service ntp status
+
+#Monitorando o NTP
+sudo ntpq -p
+sudo ntpq -pn
+
+#Visualizando Data/Hora do computador
+sudo date
+
+#Atualizando Data/Hora do Servidor NTP nos Clientes
+sudo ntpdate 192.168.1.10
+sudo ntpdate -s 192.168.1.10
