@@ -1,0 +1,68 @@
+Comandos utilizados nesse vídeo: Aula 37 – Ingressando Máquinas GNU/Linux Ubuntu Desktop no Domínio SAMBA4
+
+#Atualizando o sistema
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo reboot
+
+#Verificação de Data/Hora
+sudo date
+
+#Atualização da Data/Hora via servidor NTP
+sudo ntpdate -s ptispo01dc01.pti.intra
+
+#Atualização via Gerenciador de Data/Hora do GNU/Linux
+#Testando a conexão com o servidor
+sudo ifconfig
+sudo ping pti.intra
+sudo nslookup pti.intra
+sudo hostname
+
+#Instalando software para ajudar na configuração
+sudo apt-get install vim smbclient
+
+#Editar os arquivos hosts e hostname
+sudo vim /etc/hostname
+sudo vim /etc/hosts
+
+#Baixando o PBIS para Ubuntu Desktop
+http://download1.beyondtrust.com/Technical-Support/Downloads/PowerBroker-Identity-Services-Open-Edition/?Pass=True
+
+#Mudando as permissões do arquivo:
+chmod +x pbis-open-8.3.0.3287.linux.x86_64.deb.sh
+
+#Executando a instalação
+sudo ./pbis-open-8.3.0.3287.linux.x86_64.deb.sh
+Would you like to install package for legacy links? yes
+Would you like to install now? yes
+
+#Ingressando a máquina no domínio
+sudo domainjoin-cli join --disable ssh pti.intra administrator
+sudo domainjoin-cli query
+
+#Editando o Lightdm para liberar a autantenticação de usuários no domínio
+sudo vim /usr/share/lightdm/lightdm.conf.d/50-unity-greeter.conf
+allow-guest=false
+greeter-show-manual-login=true
+
+#Salvar e sair
+Esc + Shift : x Enter
+sudo reboot
+
+#Verificando as informações de usários
+bash
+id
+smbclient -L //ptispo01dc01 -U%
+
+#Solução PowerBroker Open Project
+https://www.powerbrokeropen.org/
+
+#Download alternativo caso o e-mail não seja recebido:
+http://download1.beyondtrust.com/Technical-Support/Downloads/PowerBroker-Identity-Services-Open-Edition/?Pass=True
+
+#Solução Centrify Express
+https://www.centrify.com/express/
+
+#Download alternativo caso o e-mail não seja recebido:
+https://www.centrify.com/express/linux-unix/download-files/#accordion-download-express-02
