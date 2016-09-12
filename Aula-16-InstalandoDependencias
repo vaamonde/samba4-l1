@@ -1,0 +1,23 @@
+Comandos utilizados no vídeo: Aula 16 – Instalação das Dependências dos Serviços de Rede
+
+#Listando o contéudo do diretório
+ls -lh
+
+#Editando o arquivo dependencias.sh
+sudo vim dependencias.sh
+
+#Executar antes o apt-get update
+sudo apt-get update
+
+#Lista de pacotes a serem instalados no servidor
+sudo apt-get install build-essential libacl1-dev libattr1-dev libblkid-dev libgnutls-dev libreadline-dev python-dev libpam0g-dev python-dnspython gdb pkg-config libpopt-dev libldap2-dev dnsutils libbsd-dev docbook-xsl libcups2-dev libpam-smbpass nfs-kernel-server
+
+#Sair sem salvar do editor VIM
+ESC
+Shift : q!
+
+#Modificando as permissões do arquivo dependencias.sh e transformando em um Script
+sudo chmod +x dependencias.sh
+
+#Executando o script dependencias.sh
+./dependencias.sh
