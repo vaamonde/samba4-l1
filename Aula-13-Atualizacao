@@ -1,0 +1,28 @@
+Comandos utilizados no vídeo: Aula 13 – Atualização do GNU/Linux Ubuntu Server
+
+#Limpando as informações na tela:
+clear ou Ctrl+L
+
+#Verificando as informações de placa de rede
+sudo ifconfig
+
+#Verificando as informações de roteamento (Gateway)
+sudo route -n
+
+#Verificando as informações de DNS
+sudo cat /etc/resolv.conf
+
+#Testando a conectividade de rede
+ping www.google.com
+
+#Atualizando as lista do apt-get
+sudo apt-get update
+
+#Atualizando o sistema (Aplicativos)
+sudo apt-get upgrade
+
+#Atualizando a Distribuição (Kernel)
+sudo apt-get dist-upgrade
+
+#Limpando o cache do apt-get
+sudo apt-get clean
