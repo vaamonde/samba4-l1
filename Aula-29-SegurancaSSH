@@ -1,0 +1,18 @@
+Comandos utilizados nesse vídeo: Aula 29 – Testando a segurança do Serviço do SSH
+
+#Aumentando a segurança do serviço SSH com TCPWrappers
+sudo ls -lha /etc/hosts.*
+sudo ldd /usr/sbin/sshd | grep libwrap
+
+#Negando a rede 192.168.10.0
+sudo vim /etc/hosts.deny
+sshd: 192.168.10.: spawn /bin/echo “$(date) Conexao Recusada – SSH – IP %a” >> /var/log/tcpwrappers.log
+
+#Liberando apenas um computador
+sudo vim /etc/hosts.allow
+sshd: 192.168.10.10: spawn /bin/echo “$(date) Conexao Liberada – SSH – IP %a” >> /var/log/tcpwrappers.log
+
+#Verificando os logs de acesso do SSH
+sudo cat -n /var/log/auth.log | grep -i sshd <-- não está no vídeo
+sudo cat -n /var/log/tcpwrappers.log | grep -i Recusada
+sudo cat -n /var/log/tcpwrappers.log | grep -i Liberada
