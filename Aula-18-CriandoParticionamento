@@ -1,0 +1,39 @@
+Comandos utilizados nesse vídeo: Aula 18 – Criando o Particionamento dos Discos
+
+#Localizando os Hard Disk no servidor
+sudo lshw -class disk
+
+#Analisando os discos:
+sudo fdisk -l /dev/sdc
+sudo fdisk -l /dev/sdd
+
+#Utilizando o fdisk para criar o particionamento no Hard Disk SDC
+sudo fdisk /dev/sdc
+    n <-- nova partição
+    p <-- primaria
+    1 <-- primeira partição
+      <-- valor do primeiro cilindro DEFAULT
+      <-- valor do cilindro final, tudo DEFAULT
+    p <-- imprime na tela o particionamento
+    t <-- mudar o tipo de partição
+      <-- fd RAID auto-configuração
+    w <-- sair e gravar as informações de partição
+
+#Utilizando o fdisk para criar o particonamento no Hard Disk SDD
+sudo fdisk /dev/sdd
+    n <-- nova partição
+    p <-- primaria
+    1 <-- primeira partição
+      <-- valor do primeiro cilindro DEFAULT
+      <-- valor do cilindro final, tudo DEFAULT
+    p <-- imprime na tela o particionamento
+    t <-- mudar o tipo de partição
+      <-- fd RAID auto-configuração
+    w <-- sair e gravar as informações de partição
+
+#Listando o diretório /dev/ para verificar os arquivos de bloco dos Hard Disk
+sudo ls -lha /dev/s*
+
+#Usando o CFDISK para verificar as informações de particionamento
+sudo cfdisk /dev/sdc
+sudo cfdisk /dev/sdd
