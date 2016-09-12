@@ -1,3 +1,5 @@
+Comandos utilizados no vídeo: Aula 14 – Instalando e Configurando o Serviço de NTP
+
 #Instalação do Serviço de NTP (Network Time Protocol)
 sudo apt-get install ntp
 
