@@ -1,0 +1,13 @@
+Comandos utilizados nesse vídeo: Aula 26 – Testando DHCP Server nos Cliente Microsoft Windows
+
+#Comandos utilizados no Microsoft Windows XP, 7, 8, 8.1 e 10 para verificação da conectividade de rede
+ipconfig
+ipconfig /all
+ipconfig /release
+ipconfig /renew
+ipconfig /displaydns
+ipconfig /flushdns
+ping pti.intra
+nslookup pti.intra
+net time \\ptispo01dc01 /set /yes
+Executar \\pti.intra
