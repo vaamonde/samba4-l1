@@ -1,0 +1,23 @@
+Comandos utilizados no vídeo: Aula 22 – Instalação do SAMBA4 e suas Dependências
+
+#Listando o contéudo do diretório
+ls -lh
+
+#Editando o arquivo samba4.sh
+sudo vim samba4.sh
+
+#Lista de pacotes a serem instalados no servidor
+sudo apt-get install sudo apt-get install samba samba-doc samba-common smbclient cifs-utils samba-vfs-modules libpam-smbpass samba-testsuite samba-dbg samba-dsdb-modules cups cups-driver-gutenprint cups-common cups-core-drivers isc-dhcp-server nmap
+
+#Sair sem salvar do editor VIM
+ESC
+Shift : q!
+
+#Modificando as permissões do arquivo samba4.sh e transformando em um Script
+sudo chmod +x samba4.sh
+
+#Executar antes o apt-get update
+sudo apt-get update
+
+#Executando o script samba4.sh
+./samba4.sh
