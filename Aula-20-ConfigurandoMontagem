@@ -1,0 +1,38 @@
+Comandos utilizados nesse vídeo: Aula 20 – Configurando a Montagem Automática de Disco do RAID1 no FSTAB
+
+#Instalando os recursos de segurança de diretório
+sudo apt-get update
+sudo apt-get install acl attr
+
+#Atualizando o arquivos fstab com os novos Hard Disk utilizando o blkid
+sudo -i
+sudo blkid /dev/md1
+sudo blkid /dev/md1 | cut -d' ' -f2
+sudo blkid /dev/md1 | cut -d' ' -f2 >> /etc/fstab
+sudo cat /etc/fstab
+exit
+
+#Editando o arquivo FSTAB – INDICADO PARA SISTEMA DE ARQUIVOS EXT4
+sudo vim /etc/fstab	SEM ASPAS NO UUID
+UUID=	/arquivos	ext4	user_xattr,acl,barrier=1,errors=remount-ro 0 1
+
+NÃO ESTÁ NO VÍDEO MAIS E RECOMENDADO FAZER, TANTO NA PARTIÇÃO DE “ARQUIVOS” COMO NA "RAIZ", POIS AS PASTAS NETLOGON E SYSVOL VÃO ESTÁ NA PARTIÇÃO / “RAIZ”, NO UBUNTU VERSÃO 14.04.4 JÁ ESTÁ ATUALIZADO OS RECURSOS DE ACL E XATTR POR PADRÃO, RECOMENDADO USAR.
+
+sudo vim /etc/fstab	SEM ASPAS NO UUID
+UUID=	/	ext4	defaults,barrier=1,errors=remount-ro 0 1
+UUID=	/arquivos	ext4	defaults,barrier=1,errors=remount-ro 0 1
+
+#Sair e salvar do editor VIM
+ESC
+Shift : x
+
+#Reiniciando para testar a montagem automática do RAID
+sudo reboot
+
+#Para confirmar se o suporte a ACL e XATTR está habilitado no RAID-1, NÃO ESTÁ NO VÍDEO.
+tune2fs -l /dev/md1 | grep "Default mount options:"
+
+#verificando o montagem
+sudo mount | grep /arquivos
+sudo blkid /dev/md1
+
