@@ -1,0 +1,38 @@
+Comandos utilizados nesse vídeo: Aula 42 – Integrando o GNU/Linux com RSAT e NIS (Winbind)
+
+#Alterando a senha do vaamonde
+sudo passwd vaamonde
+
+#Instalando o recurso do Winbind e Quota de Disco e mais algumas dependências
+sudo apt-get install winbind quota quotatool ldb-tools libnss-winbind libpam-winbind
+
+#Editando o arquivo nsswitch.conf
+sudo vim /etc/nsswitch.conf
+passwd:	compat winbind
+group:	compat winbind
+shadown:	compat winbind
+
+#Testar antes do ADUC
+sudo ldbedit -H /var/lib/samba/private/sam.ldb -e vim -b CN=pti,CN=ypservers,CN=ypServ30,CN=RpcServices,CN=System,DC=pti,DC=intra
+msSFU30MaxUidNumber: 10000
+msSFU30MaxGidNumber: 20000
+
+#Aplicar as mudanças no SAMBA4
+sudo service samba-ad-dc restart
+sudo server samba restart
+sudo smbcontrol all reload-config
+
+#Permitindo o usuário Administrator a gerenciar discos no GNU/Linux Ubuntu Server
+sudo net rpc rights list accounts -UAdministrator
+sudo net rpc rights grant 'PTI\Domain Admins' SeDiskOperatorPrivilege -UAdministrator
+
+#Verificando informações do Winbind
+sudo wbinfo -p
+sudo wbinfo -u
+sudo wbinfo -g
+sudo getent passwd "administrator"
+sudo getent group "G-Financeiro"
+sudo net ads info
+
+#Configurar usuários pelo RSAT para o suporte ao ADUC (Active Directory Users and Computers) Atributos do Unix
+Windows 7 – Adicionar o suporte ao NIS
