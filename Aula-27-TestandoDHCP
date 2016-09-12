@@ -1,0 +1,14 @@
+Comandos utilizados nesse vídeo: Aula 27 – Testando DHCP Server nos Cliente GNU/Linux
+
+#Comandos utilizados no GNU/Linux Ubuntu Desktop e Liux Mint
+sudo ifconfig
+sudo router -n
+sudo cat /etc/resolv.conf
+ping pti.intra
+nslookup pti.intra
+
+#Verificação do Lease no servidor
+sudo cat /var/lib/dhcp/dhcpd.lease
+
+#Verificação do Lease no cliente <-- NÃO ESTÁ NO VÍDEO
+sudo cat /var/lib/dhcp/dhclient.lease
