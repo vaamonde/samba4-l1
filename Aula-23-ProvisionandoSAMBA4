@@ -1,0 +1,53 @@
+Comandos utilizados nesse vídeo: Aula 23 – Provisionando o SAMBA4 como Active Directory Domain Controller
+
+#Parando o serviço do SAMBA4
+sudo service samba stop
+sudo service samba status
+
+#Fazendo o backup do arquivo de configuração do SAMBA4 smb.conf
+sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bkp
+
+#Promovendo o servidor SAMBA4 como AD-DS
+sudo samba-tool domain provision --use-rfc2307 --use-xattrs=yes --interactive
+
+–use-rfc2307: define a possibilidade de armazenar informações de usuário e grupo em um diretório LDAP. Isto traz várias vantagens em um ambiente Active Directory.
+–use-xattrs=yes: Use os recursos do sistema de arquivos nativo para armazenar os atributos estendidos necessários para o Windows ACLs (obrigatório por exemplo para a quota é o SysVol)
+–use-ntvfs: utilizar o New Tecnology Virtual File System, padrão: No
+
+Observação: Nesse vídeo estou utilizando recurso de --use-ntvfs, está sendo feito teste para correção de bugs de permissão nessa versão, mais informações no Grupo do Google desse curso. Indicado que seja removido essa opção para produção.
+
+#Informações do REALM, DOMAIN, SERVER ROLE e DNS
+Realm:	pti.intra
+Domain:	pti
+Server Role:	dc
+DNS Backend:	SAMBA_INTERNAL
+DNS Forwarder:	192.168.1.1
+Senha:	Senha Forte
+
+#Fazendo o backup do arquivo de configuração do Kerberos krb5.conf
+sudo mv /etc/krb5.conf /etc/krb5.conf.bkp
+
+#Alterando o arquivo do Kerberos para o novo krb5.conf criado pelo SAMBA4
+sudo cp /var/lib/samba/private/krb5.conf /etc/krb5.conf
+
+#Editando e verificando as configurações do Kerberos no arquivo krb5.conf
+sudo vim /etc/krb5.conf
+Realm:	PTI.INTRA <-- verificar essa linha
+
+#Sair sem salvar do editor VIM
+ESC
+Shift : q!
+
+#Verificando o nível funcional do domínio do SAMBA4
+sudo samba-tool domain level show
+
+#Alterando o nível funcional do domínio e da floresta caso não esteja no nível 2008_R2
+sudo samba-tool domain level raise –domain-level 2008_R2 –forest-level 2008_R2
+
+#Reiniciando o servidor para validação do processo
+sudo reboot
+
+#Verifcando o status do serviços do SAMBA
+sudo service samba status
+sudo service samba-ad-dc status
+sudo netstat -tulpen | more
