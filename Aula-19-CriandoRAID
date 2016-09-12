@@ -1,0 +1,57 @@
+Comandos utilizados nesse vídeo: Aula 19 – Criando o RAID-1 nos Discos para Armazenamento
+
+#Criando o RAID1 com os Hard Disk SDC e SDD
+sudo mdadm -C -v /dev/md1 -l 1 -n 2 /dev/sdc1 /dev/sdd1
+C — criar o dispositivo md
+v — verboso
+l — tipo do RAID 1
+n — número de dispositivos no RAID 2
+
+#Criando o sistema de arquivos EXT4 no MD1
+sudo mkfs.ext4 /dev/md1
+
+#Verificando o RAID1 criado
+sudo cat /proc/mdstat
+sudo mdadm -D /dev/md1
+sudo mdadm -E /dev/sdc1
+sudo watch cat /proc/mdstat
+
+#Verificando os detalhes dos RAID1
+sudo mdadm --detail --scan
+
+#Atualizando o arquivo /etc/mdadm/mdadm.conf
+sudo -i
+sudo mdadm --detail --scan | grep /1 > > /etc/mdadm/mdadm.conf
+exit
+
+#Editando o arquivo mdadm.conf
+sudo vim /etc/mdadm/mdadm.conf
+
+#Utilizar as opções de recortar e colocar o VIM
+modo visual: v ou utilizar o dd <
+
+#selecionar o texto
+recortar: d
+selecionar o local para colar
+colar: p
+
+#Sair e salvar do editor VIM
+ESC
+Shift : x
+
+#Atualizando o initramfs
+sudo update-initramfs -u
+
+#Reinicializar o Servidor para testar o RAID1
+sudo reboot
+
+#Montando o disco do RAID manualmente com o comand mount
+sudo mkdir /arquivos
+sudo mount /dev/md1 /arquivos
+sudo mount -l | grep /arquivos
+sudo cd /arquivos
+sudo mkdir teste{1..9}
+sudo ls -lha
+sudo cd /
+sudo umount /arquivos
+sudo mount -l | grep /arquivos
