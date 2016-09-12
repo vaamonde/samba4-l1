@@ -1,0 +1,75 @@
+Comandos utilizados nesse vídeo: Aula 21 – Configurando a Rede no GNU/Linux Ubuntu Server
+
+#Localizando as Placas de Redes no Sistema GNU/Linux derivado do Debian
+sudo lspci
+sudo lspci | grep -i eth
+sudo lshw -class network
+
+#Verificando as informações das Placas de Redes
+sudo ifconfig
+
+#Verificando as informações de Rotas
+sudo route -n
+
+#Verificando as informações de Servidores DNS
+sudo cat -n /etc/resolv.conf
+
+#Verificando a conectividade física da Placa de Rede
+sudo mii-tool eth0
+sudo ethtool eth0
+
+#Comando para desligar a placa de rede
+sudo ifdown eth0
+
+#Editando o arquivo de configuração das interfaces
+sudo vim /etc/network/interfaces
+
+#Configuração Static
+auto eth0
+iface eth0 inet static
+address 192.168.1.10
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
+dns-nameservers 192.168.1.10 192.168.1.1 8.8.8.8 8.8.4.4
+dns-search pti.intra
+dns-domain pti.intra
+
+#Salvando e saindo do editor VIM
+ESC
+Shift : w
+
+#Comando para ligar a placa de rede
+sudo ifup eth0
+
+#Editando o arquivo de configuração hostname
+sudo vim /etc/hostname
+ptispo01dc01.pti.intra — INDICADO COLOCAR O NOME FQDN (Fully Qualified Domain Name)
+
+#Salvando e saindo do editor VIM
+ESC
+Shift : w
+
+#Editando o arquivo de configuração hosts
+sudo vim /etc/hosts
+192.168.1.10	ptispo01dc01.pti.intra	ptispo01dc01
+
+#Salvando e saindo de editor VIM
+ESC
+Shift : w
+
+#Editando o arquivo de configuração nsswtich.conf
+sudo /etc/nsswitch.conf
+hosts <-- analisar a linha
+
+#Sair sem salvar do editor VIM
+ESC
+Shift : q!
+
+#Testando a conectividade
+ping localhost
+ping 192.168.1.10
+ping ptispo01dc01
+ping www.google.com
+sudo apt-get update
