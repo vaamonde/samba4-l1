@@ -1,0 +1,17 @@
+Comandos utilizados no vídeo: Aula 15 – Instalando e Configurando o Serviço do Kerberos
+
+#Instalação do Serviço de KDC Kerberos
+sudo apt-get install krb5-user krb5-config
+
+#Configuração do krb5-config padrão
+#Obs: o nome Realm deve ser em MAIÚSCULA
+Realm=PTI.INTRA
+Server=ptispo01dc01.pti.intra
+Hostname=ptispo01dc01.pti.intra
+
+#Visualização das informações do krb.conf
+sudo vim /etc/krb5.conf
+
+#Sair sem salvar do editor VIM
+ESC
+Shift : q!
