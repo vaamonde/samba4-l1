@@ -1,0 +1,16 @@
+Comandos utilizados nesse vídeo: Aula 17 – Criando Discos no VirtualBOX para Armazenamento
+
+#Localizando os Hard Disk no servidor
+sudo lshw -class disk
+
+#Verificando os disco com o Fdisk, Cfdisk e Parted
+sudo fdisk -l	— sem suporte a GPT somente MBR
+sudo parted -l	— com suporte a GPT e MBR
+sudo cfdisk -P s — sem suporte a GPT somente MBR
+
+#Verificando os Hard Disk SDC e SDD
+sudo cfdisk -P s /dev/sdc
+sudo cfdisk -P s /dev/sdd
+
+#Verificando o UUID dos Hard Disk
+sudo blkid
