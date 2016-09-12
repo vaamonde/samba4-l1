@@ -1,0 +1,97 @@
+Comandos utilizados nesse vídeo: Aula 24 – Pós-Provisionamento do SAMBA4 – Troubleshooting
+
+#Troubleshooting pós-instalação do SAMBA4
+sudo samba -V
+sudo service ntp status
+sudo ps -auxf | grep -i samba
+sudo netstat -tulpen | egrep 53
+
+#Informações dos Serviços de Rede integrado com o SAMBA4
+SSH (Secure Shell – Porta 22)
+DNS (Domain Name System – Porta 53)
+SMB (Server Message Block NetBIOS – Portas padrão: 137 até 139)
+RPC/ECM (Porta padrão 135)
+CIFS (Common Internet File System – Porta padrão 445)
+LDAP (Lightweight Directory Access Protocol – Porta padrão 389)
+LDAPS (Lightweight Directory Access Protocol Secure – Porta padrão 636)
+GC (Global Catalog – Porta padrão 3268 até 3269)
+Kerberos (Porta padrão 88/464)
+NTP (Network Time Protocol – Porta padrão 123)
+DHCP (Dynamic Host Configuration Protocol – Porta padrão 67 até 68)
+NFS (Network File System – Porta 2049)
+CUPS (Common Unix Print System – Porta 631)
+
+#Verificando o arquivo de configuração do nsswitch.conf
+sudo cat /etc/nsswitch.conf | grep hosts
+
+#Verificando o arquivo de configuração das interfaces
+sudo cat /etc/network/interfaces
+
+#Desligar/ligar placa de rede
+sudo ifdown eth0
+sudo ifup eth0
+
+#Confirmando as mundanças de endereçamento
+sudo ifconfig
+sudo route -n
+sudo cat /et/resolv.conf
+
+#Verificações importantes do SAMBA4 pós instalação
+sudo samba-tool testparm
+sudo samba-tool domain info pti.intra
+sudo samba-tool dbcheck
+sudo samba-tool time
+sudo samba-tool drs showrepl
+sudo samba-tool drs bind
+sudo samba-tool dns serverinfo pti.intra
+sudo samba-tool gpo listall
+sudo samba-tool group list
+sudo samba-tool user list
+sudo samba-tool domain passwordsettings show
+sudo samba-tool fsmo show
+
+#Informações sobre o FSMO
+1. Schema Master (Mestre de Esquema);
+2. Domain Name Master (Mestre de Nomeação de Domínio);
+3. PDC Emulator (Emulador de Controlador de Domínio Primário);
+4. RID Master (Mestre ID Relativo – SID)
+5. Infra-Structure Master (Mestre de Infra-Estrutura).
+
+#Testando o DNS integrado com o SAMBA4
+sudo samba-tool dns query ptispo01dc01 PTI.INTRA @ ALL --username administrator
+
+#Testando o acesso ao cliente do SAMBA no servidor local
+sudo smbclient -L localhost -U%
+sudo smbclient -L 192.168.1.10 -U%
+sudo smbclient -L pti.intra -U%
+sudo smbclient -L ptispo01dc01 -U%
+sudo smbclient -L ptispo01dc01.pti.intra -U%
+sudo smbclient //localhost/netlogon -U 'administrator'
+
+#Testando as configurações de resolução DNS local utilizando o comando host
+sudo host -t A ptispo01dc01
+sudo host -t A ptispo01dc01.pti.intra
+sudo host -t A 192.168.1.10
+sudo host -t A pti.intra
+
+#Testando as configurações de resolução DNS local utilizando o comando nslookup
+sudo nslookup ptispo01dc01
+sudo nslookup ptispo01dc01.pti.intra
+sudo nslookup 192.168.1.10
+
+#Testando a conectividade
+ping ptispo01dc01.pti.intra
+ping pti.intra
+ping www.google.com
+
+#Testando LDAP com DNS integrado no SAMBA4
+sudo host -t NS pti.intra
+sudo host -t SOA pti.intra
+sudo host -t SRV _ldap._tcp.pti.intra
+sudo host -t SRV _kerberos._udp.pti.intra
+sudo host -t SRV _ldap._tcp.gc._msdcs.pti.intra <– NÃO ESTÁ NO VÍDEO
+
+#Testando o Kerberos e a geração de KDC
+sudo kinit administrator@PTI.INTRA
+sudo klist
+sudo klist -l
