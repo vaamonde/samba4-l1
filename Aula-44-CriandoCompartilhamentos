@@ -1,0 +1,28 @@
+Comandos utilizados no vídeo: Aula 44 – Criando compartilhamentos no SAMBA4 Básico (Pasta Pública)
+
+#Acessando o diretório do SAMBA4
+sudo cd /etc/samba
+
+#Fazendo o backup do arquivo smb.conf
+sudo cp smb.conf smb.conf.old
+
+#Editando o arquivo smb.conf
+sudo vim /etc/samba/smb.conf
+
+[Global]
+vfs objects = acl_xattr
+map acl inherit = yes
+store dos attributes = yes
+
+[Publica]
+comment = Pasta Pública
+path = /arquivos/pti.intra/Publica
+read only = no
+
+#Reiniciando o serviço do SAMBA4
+sudo testparm
+sudo testparm -v | more
+sudo samba-tool testparm
+sudo service samba-ad-dc restart
+sudo service samba restart
+sudo smbcontrol all reload-config
