@@ -1,0 +1,53 @@
+Comandos utilizados nesse vídeo: Aula 25 – Configuração do Serviço de DHCP Server
+
+#Verificando o status do Servidor DHCPD
+sudo service isc-dhcp-server status
+
+#Fazendo o backup do arquivo de configuração do DHCP Server dhcpd.conf
+sudo cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bkp
+
+#Editando o arquivo de configuração do DHCP Server dhcpd.conf
+sudo vim /etc/dhcp/dhcpd.conf
+
+ddns-update-style interim;
+ddns-updates on;
+option domain-name "pti.intra";
+option domain-name-servers 192.168.1.10;
+option ntp-servers 192.168.1.10;
+default-lease-time 600;
+max-lease-time 7200;
+authoritative;
+
+subnet 192.168.1.0 netmask 255.255.255.0 {
+  range 192.168.1.100 192.168.1.200;
+  option domain-name "pti.intra";
+  option domain-name-servers 192.168.1.10 8.8.8.8 8.8.4.4;
+  option netbios-name-servers 192.168.1.10;
+  option netbios-dd-server 192.168.1.10;
+  option netbios-node-type 8;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.1.1;
+  option broadcast-address 192.168.1.255;
+  option ntp-servers 192.168.1.10
+  default-lease-time 600;
+  max-lease-time 7200;
+  allow unknown-clients; <-- no vídeo está faltando o "s" no final do "clients"
+}
+
+#Sair e salvar no editor VIM
+ESC
+Shift : x
+
+#Verificando as configurações do arquivo dhcpd.conf
+sudo dhcpd -cf /etc/dhcp/dhcpd.conf
+
+#Parando e iniciando o serviço do DHCP Server
+sudo service isc-dhcp-server stop
+sudo service isc-dhcp-server start
+sudo service isc-dhcp-server status
+
+#Verificando a porta de conexão do DHCP Server
+sudo netstart -tupenl | grep -i 67
+
+#Verificando o arquivo de Lease do DHCP Server
+sudo cat /var/lib/dhcp/dhcpd.lease
