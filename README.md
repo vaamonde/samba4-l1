@@ -241,7 +241,6 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
  	<li><strong>ou até mesmo para subir de cargo na sua empresa.</strong></li>
 </ul>
 <p style="text-align: left;">O certificado tem validade para fins <strong>curriculares</strong> e em <strong>provas de títulos</strong>, como certificado de <strong>atualização/aperfeiçoamento</strong>, respeitando a <em>carga-horária</em> descrita e não podendo ser usado para outros fins. Por isso, destacamos que <strong>NÃO é um certificado técnico profissionalizante</strong> ou de <strong>graduação</strong> ou de <strong>pós-graduação</strong> e não dá direito de assumir responsabilidades técnicas.</p>
-[gdlr_frame type="border" align="left" caption="CERTIFICADO"][gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2015/10/Certificado_Modelo_AulaEad.jpg" link_url="" alt="Modelo de Certificado de Conclusão"][/gdlr_frame]
 
 <h3 class="widget-title">METODOLOGIA DO CURSO</h3>
 <p style="text-align: justify;">Curso a distância que será desenvolvido no ambiente aulaead.com através de vídeo aulas que ajudarão na compreensão dos conceitos e práticas, fornecendo as habilidades e conhecimentos necessários para o aluno dar os primeiros passos na utilização do SAMBA4 para simulação do ambiente de rede.</p>
