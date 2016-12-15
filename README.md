@@ -7,61 +7,58 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 <div class="textwidget">
 <p style="text-align: justify;">Durante o curso você aprenderá passo a passo na prática a instalar e configurar o software <strong>SAMBA4 Level 1. </strong>O SAMBA-4 em sua nova versão, traz todos os recursos que os profissionais de TI precisar para implementar ou migrar redes Microsoft Windows Server para GNU/Linux, nessa versão é possível criar um AD-DS (Active Directory Domain Controller) completo com o <strong>Schema do Windows Server 2008 R2</strong>, criar e gerenciar Usuários, Grupos, Unidades Organizacionais, Computadores e GPO/GPP <strong>(Group Policy Object/Group Policy Preferences)</strong>, todos os recursos do FSRM <strong>(File Server Resource Manager)</strong> também está disponível para o gerenciamento e auditória de arquivos e diretórios, com uma base de sistema operacional sólida e Open Source, seu projeto de centralização e gerenciamento de usuários na rede será um sucesso!!!.</p>
 <p style="text-align: justify;">Ideal para Estudantes e Profissionais que desejam se aprofundar nos conceitos de servidores GNU/Linux Ubuntu Server e implementação de Solução Open Source de Armazenamento e Gerenciamento de Arquivos e Usuários utilizando o <strong>SAMBA-4.</strong></p>
-<p style="text-align: justify;"><a href="http://aulaead.com/wp-content/uploads/2016/05/samba4vsactive.png"><img class="wp-image-4586 aligncenter" src="http://aulaead.com/wp-content/uploads/2016/05/samba4vsactive-300x169.png" alt="samba4vsactive" width="719" height="405" /></a></p>
-[gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/TUX_AULASr.jpg" link_url="https://www.youtube.com/watch?v=PZYGjLDIXm0&amp;list=PLozhsZB1lLUP8vTzrTTfQ1YWsR0hUAzFu" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]
 
-[gdlr_tab title="PRÉ-REQUISITO"]
+<h3 class="widget-title">PRÉ-REQUISITO</h3>
 <p style="text-align: justify;">Desejável conhecimentos básicos em Virtualização, GNU/Linux Ubuntu Desktop, Linux Mint, Debian, Protocolos de Rede TCP/IP e Microsoft Windows Server (qualquer versão). Faça <strong>GRATUITAMENTE</strong> o curso abaixo indicado para adquirir a base necessária para este treinamento.</p>
-<p style="text-align: justify;"><a href="http://aulaead.com/course/cursovirtualbox/"><img class="alignnone size-full wp-image-4154" src="http://aulaead.com/wp-content/uploads/2015/11/virtualbox-aulaead.png" alt="virtualbox aulaead" width="204" height="136" /></a> <a href="http://aulaead.com/course/ubuntu-desktop-basico/" rel="attachment wp-att-4370"><img class="alignnone wp-image-4370" src="http://aulaead.com/wp-content/uploads/2016/02/AulaEAD_Curso_Linux_Ubuntu_Desktop-300x200.jpg" alt="AulaEAD_Curso_Linux_Ubuntu_Desktop" width="204" height="136" /></a></p>
-<p style="text-align: justify;"><a href="http://aulaead.com/course/linux-mint-desktop-basico/" rel="attachment wp-att-4368"><img class="alignnone wp-image-4368" src="http://aulaead.com/wp-content/uploads/2016/02/AulaEAD_Curso_Linux_Mint_Desktop-300x200.jpg" alt="AulaEAD_Curso_Linux_Mint_Desktop" width="204" height="136" /></a> <a href="http://aulaead.com/course/curso-de-redes-tcp-ip-enderecamento-ipv4-e-subrede/" rel="attachment wp-att-4205"><img class="alignnone wp-image-4205" title="Endereçamento IPv4" src="http://aulaead.com/wp-content/uploads/2015/12/ipv4.jpg" alt="ipv4" width="204" height="137" /></a></p>
-<p style="text-align: justify;"><strong>IDADE MÍNIMA:</strong> <strong>14 ANOS.</strong></p>
-[/gdlr_tab]
 
-[gdlr_tab title="PÚBLICO ALVO"]
+<p style="text-align: justify;"><strong>IDADE MÍNIMA:</strong> <strong>14 ANOS.</strong></p>
+
+
+<h3 class="widget-title">PÚBLICO ALVO</h3>
 <p style="text-align: justify;">Qualquer pessoa que queira conhecer o <strong>SAMBA4</strong> e suas ferramentas de integrações, focado para usuários intermediários em <strong>GNU/Linux</strong> e <strong>Redes de Computadores</strong> que estão buscando conhecimentos e práticas em cenários de redes para migração ou implementação de servidores de centralização de domínio.</p>
-[/gdlr_tab]
-[gdlr_tab title="MATERIAL DIDÁTICO"]
+
+<h3 class="widget-title">MATERIAL DIDÁTICO</h3>
 <p style="text-align: justify;">Apostila em formato digital oferecida pelo <strong>Site Procedimentos em TI</strong> em parceria com <strong>AulaEAD.com</strong>, todo o curso possui Vídeo Aulas para facilitar o aprendizado e toda a documentação de ajuda, como script, comandos, help, etc</p>
-[/gdlr_tab]
-[gdlr_tab title="PRÉ-REQUESITOS"]
+
+<h3 class="widget-title">PRÉ-REQUESITOS</h3>
 <p style="text-align: justify;">O aluno deverá possuir conhecimentos básicos em informática. Os software utilizados pelo aluno, durante o desenvolvimento do curso são de inteira responsabilidade do mesmo.</p>
-[/gdlr_tab]
-[gdlr_tab title="RECOMENDAÇÕES"]
+
+<h3 class="widget-title">RECOMENDAÇÕES</h3>
 <p style="text-align: justify;">Fazer os cursos: Curso de Virtualização com VirtualBOX, Curso de Ubuntu Desktop Básico, Curso de GNU/Linux Mint Desktop Básico, Curso Primeiros Passos com Servidores GNU/Linux e Curso Administrando Servidores Windows 2008</p>
-[/gdlr_tab]
-[gdlr_tab title="CONTEÚDO PROGRAMÁTICO"]
+
+<h3 class="widget-title">CONTEÚDO PROGRAMÁTICO</h3>
 <table style="height: 278px;" border="0" width="1194" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 1 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=PZYGjLDIXm0" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 1</td>
 <td style="text-align: left;" valign="top" width="448">Abertura do Curso de GNU/Linux SAMBA4 Level 1</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 2 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=k7J2VUlng50" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 2</td>
 <td style="text-align: left;" valign="top" width="448">Apresentação do Curso Linux SAMBA4 Level 1</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 3 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=Zi2hERdfo3U" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 3</td>
 <td style="text-align: left;" valign="top" width="448">Conhecendo o GNU/Linux Ubuntu Server</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 4 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=j01YZhYpeyM" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 4</td>
 <td style="text-align: left;" valign="top" width="448">Análise de Cenário e Solução Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 5 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=OMywMvPkUN8" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 5</td>
 <td style="text-align: left;" valign="top" width="448">Análise de Cenário e Solução GNU/Linux</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 6 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=DN0-BaZyjNo" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 6</td>
 <td style="text-align: left;" valign="top" width="448">Comparativo entre Microsoft VS GNU/Linux</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 7 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=BhM7pCKCprU" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 7</td>
 <td style="text-align: left;" valign="top" width="448">Comparativo entre Active Directory VS SAMBA4</td>
 </tr>
 <tr>
-<td style="text-align: left;" valign="top" width="163">AULA 8 [gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2016/05/BTN_assistir.png" link_url="https://www.youtube.com/watch?v=PZYGjLDIXm0" target="_blank" alt="Assista as Aulas Teóricas agora mesmo no YOUTUBE"][gdlr_accordion style="style-1" initial="1"]</td>
+<td style="text-align: left;" valign="top" width="163">AULA 8</td>
 <td style="text-align: left;" valign="top" width="448">Finalizando a parte teórica</td>
 </tr>
 <tr>
@@ -222,9 +219,8 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 </tr>
 </tbody>
 </table>
-[/gdlr_tab]
 
-[gdlr_tab title="CERTIFICADO DE CONCLUSÃO"]
+<h3 class="widget-title">CERTIFICADO DE CONCLUSÃO</h3>
 <p style="text-align: left;">O <strong>Certificado Digital</strong> contabilizará um total de <strong>20 horas</strong> que incluem:</p>
 
 <div class="su-list su-list-style-" style="text-align: left;">
@@ -247,21 +243,13 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 <p style="text-align: left;">O certificado tem validade para fins <strong>curriculares</strong> e em <strong>provas de títulos</strong>, como certificado de <strong>atualização/aperfeiçoamento</strong>, respeitando a <em>carga-horária</em> descrita e não podendo ser usado para outros fins. Por isso, destacamos que <strong>NÃO é um certificado técnico profissionalizante</strong> ou de <strong>graduação</strong> ou de <strong>pós-graduação</strong> e não dá direito de assumir responsabilidades técnicas.</p>
 [gdlr_frame type="border" align="left" caption="CERTIFICADO"][gdlr_image_link type="image" image_url="http://aulaead.com/wp-content/uploads/2015/10/Certificado_Modelo_AulaEad.jpg" link_url="" alt="Modelo de Certificado de Conclusão"][/gdlr_frame]
 
-[/gdlr_tab]
-
-[gdlr_tab title="METODOLOGIA DO CURSO"]
+<h3 class="widget-title">METODOLOGIA DO CURSO</h3>
 <p style="text-align: justify;">Curso a distância que será desenvolvido no ambiente aulaead.com através de vídeo aulas que ajudarão na compreensão dos conceitos e práticas, fornecendo as habilidades e conhecimentos necessários para o aluno dar os primeiros passos na utilização do SAMBA4 para simulação do ambiente de rede.</p>
-[/gdlr_tab]
 
-[gdlr_tab title="INFORMAÇÕES GERAIS"]
+<h3 class="widget-title">INFORMAÇÕES GERAIS</h3>
 <ul>
  	<li style="text-align: justify;">Este Curso EAD Pago <strong>não</strong> fornece qualquer tipo de suporte técnico ou pedagógico (educacional), além do conteúdo gravado no produto.</li>
  	<li style="text-align: justify;">Todos os outros nomes de produtos referidos ao longo deste curso têm uma finalidade meramente informativa, podendo ser marcas comerciais dos respectivos proprietários. O site www.aulaead.com não detém quaisquer direitos sobre essas marcas.</li>
  	<li style="text-align: justify;">Todos os softwares utilizados pelo aluno, durante o desenvolvimento do curso, são de inteira responsabilidade do mesmo.</li>
 </ul>
-[/gdlr_tab]
-
-[/gdlr_accordion]
-
-<img class="aligncenter" title="Este site aceita pagamentos com Visa, MasterCard, Diners, American Express, Hipercard, Aura, Elo, PLENOCard, PersonalCard, BrasilCard, FORTBRASIL, Cabal, Mais!, Avista, Grandcard, Sorocred, Bradesco, Itaú, Banco do Brasil, Banrisul, Banco HSBC, saldo em conta PagSeguro e boleto." src="https://stc.pagseguro.uol.com.br/public/img/banners/pagamento/todos_animado_550_50.gif" alt="Logotipos de meios de pagamento do PagSeguro" />
 </div>
