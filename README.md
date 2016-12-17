@@ -4,7 +4,7 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 <a href="http://www.facebook.com/share.php?u=http://aulaead.com/course/curso-linux-samba-4-level-1/" target="_blank"><img class="aligncenter" src="http://aulaead.com/wp-content/uploads/2016/01/botao-compartilhar-facebook.png" alt="Compartilhar no seu Facebook" width="550" height="88" /></a>
 
 <h3 class="widget-title">O QUE VOCÊ VAI APRENDER?</h3>
-<div class="textwidget">
+<div class="textwidget" align="justify">
 <p style="text-align: justify;">Durante o curso você aprenderá passo a passo na prática a instalar e configurar o software <strong>SAMBA4 Level 1. </strong>O SAMBA-4 em sua nova versão, traz todos os recursos que os profissionais de TI precisar para implementar ou migrar redes Microsoft Windows Server para GNU/Linux, nessa versão é possível criar um AD-DS (Active Directory Domain Controller) completo com o <strong>Schema do Windows Server 2008 R2</strong>, criar e gerenciar Usuários, Grupos, Unidades Organizacionais, Computadores e GPO/GPP <strong>(Group Policy Object/Group Policy Preferences)</strong>, todos os recursos do FSRM <strong>(File Server Resource Manager)</strong> também está disponível para o gerenciamento e auditória de arquivos e diretórios, com uma base de sistema operacional sólida e Open Source, seu projeto de centralização e gerenciamento de usuários na rede será um sucesso!!!.</p>
 <p style="text-align: justify;">Ideal para Estudantes e Profissionais que desejam se aprofundar nos conceitos de servidores GNU/Linux Ubuntu Server e implementação de Solução Open Source de Armazenamento e Gerenciamento de Arquivos e Usuários utilizando o <strong>SAMBA-4.</strong></p>
 
@@ -31,191 +31,191 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 <tbody>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 1</td>
-<td style="text-align: left;" valign="top" width="448">Abertura do Curso de GNU/Linux SAMBA4 Level 1</td>
+<td style="text-align: left;" valign="top" width="640">Abertura do Curso de GNU/Linux SAMBA4 Level 1</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 2</td>
-<td style="text-align: left;" valign="top" width="448">Apresentação do Curso Linux SAMBA4 Level 1</td>
+<td style="text-align: left;" valign="top" width="640">Apresentação do Curso Linux SAMBA4 Level 1</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 3</td>
-<td style="text-align: left;" valign="top" width="448">Conhecendo o GNU/Linux Ubuntu Server</td>
+<td style="text-align: left;" valign="top" width="640">Conhecendo o GNU/Linux Ubuntu Server</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 4</td>
-<td style="text-align: left;" valign="top" width="448">Análise de Cenário e Solução Microsoft</td>
+<td style="text-align: left;" valign="top" width="640">Análise de Cenário e Solução Microsoft</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 5</td>
-<td style="text-align: left;" valign="top" width="448">Análise de Cenário e Solução GNU/Linux</td>
+<td style="text-align: left;" valign="top" width="640">Análise de Cenário e Solução GNU/Linux</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 6</td>
-<td style="text-align: left;" valign="top" width="448">Comparativo entre Microsoft VS GNU/Linux</td>
+<td style="text-align: left;" valign="top" width="640">Comparativo entre Microsoft VS GNU/Linux</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 7</td>
-<td style="text-align: left;" valign="top" width="448">Comparativo entre Active Directory VS SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Comparativo entre Active Directory VS SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 8</td>
-<td style="text-align: left;" valign="top" width="448">Finalizando a parte teórica</td>
+<td style="text-align: left;" valign="top" width="640">Finalizando a parte teórica</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 9</td>
-<td style="text-align: left;" valign="top" width="448">Bônus: Como cobrar um serviço de TI</td>
+<td style="text-align: left;" valign="top" width="640">Bônus: Como cobrar um serviço de TI</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 10</td>
-<td style="text-align: left;" valign="top" width="448">Baixando a ISO do GNU/Linux Ubuntu Server</td>
+<td style="text-align: left;" valign="top" width="640">Baixando a ISO do GNU/Linux Ubuntu Server</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 11</td>
-<td style="text-align: left;" valign="top" width="448">Criando o Máquina Virtual no VirtualBOX</td>
+<td style="text-align: left;" valign="top" width="640">Criando o Máquina Virtual no VirtualBOX</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 12</td>
-<td style="text-align: left;" valign="top" width="448">Instalação do GNU/Linux Ubuntu Server</td>
+<td style="text-align: left;" valign="top" width="640">Instalação do GNU/Linux Ubuntu Server</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 13</td>
-<td style="text-align: left;" valign="top" width="448">Atualização do GNU/Linux Ubuntu Server</td>
+<td style="text-align: left;" valign="top" width="640">Atualização do GNU/Linux Ubuntu Server</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 14</td>
-<td style="text-align: left;" valign="top" width="448">Instalando e Configurando o Serviço de NTP</td>
+<td style="text-align: left;" valign="top" width="640">Instalando e Configurando o Serviço de NTP</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 15</td>
-<td style="text-align: left;" valign="top" width="448">Instalando e Configurando o Serviço do Kerberos</td>
+<td style="text-align: left;" valign="top" width="640">Instalando e Configurando o Serviço do Kerberos</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 16</td>
-<td style="text-align: left;" valign="top" width="448">Instalação das Dependências dos Serviços de Rede</td>
+<td style="text-align: left;" valign="top" width="640">Instalação das Dependências dos Serviços de Rede</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 17</td>
-<td style="text-align: left;" valign="top" width="448">Criando Discos no VirtualBOX para Armazenamento</td>
+<td style="text-align: left;" valign="top" width="640">Criando Discos no VirtualBOX para Armazenamento</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 18</td>
-<td style="text-align: left;" valign="top" width="448">Criando o Particionamento dos Discos</td>
+<td style="text-align: left;" valign="top" width="640">Criando o Particionamento dos Discos</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 19</td>
-<td style="text-align: left;" valign="top" width="448">Criando o RAID-1 nos Discos para Armazenamento</td>
+<td style="text-align: left;" valign="top" width="640">Criando o RAID-1 nos Discos para Armazenamento</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 20</td>
-<td style="text-align: left;" valign="top" width="448">Configurando a Montagem Automática de Disco no FSTAB</td>
+<td style="text-align: left;" valign="top" width="640">Configurando a Montagem Automática de Disco no FSTAB</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 21</td>
-<td style="text-align: left;" valign="top" width="448">Configurando a Rede no GNU/Linux Ubuntu Server</td>
+<td style="text-align: left;" valign="top" width="640">Configurando a Rede no GNU/Linux Ubuntu Server</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 22</td>
-<td style="text-align: left;" valign="top" width="448">Instalação do SAMBA4 e suas Dependências</td>
+<td style="text-align: left;" valign="top" width="640">Instalação do SAMBA4 e suas Dependências</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 23</td>
-<td style="text-align: left;" valign="top" width="448">Provisionando o SAMBA4 como Active Directory Domain Controller</td>
+<td style="text-align: left;" valign="top" width="640">Provisionando o SAMBA4 como Active Directory Domain Controller</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 24</td>
-<td style="text-align: left;" valign="top" width="448">Pós-Provisionamento do SAMBA4 - Troubleshooting</td>
+<td style="text-align: left;" valign="top" width="640">Pós-Provisionamento do SAMBA4 - Troubleshooting</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 25</td>
-<td style="text-align: left;" valign="top" width="448">Configuração do Serviço de DHCP Server</td>
+<td style="text-align: left;" valign="top" width="640">Configuração do Serviço de DHCP Server</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 26</td>
-<td style="text-align: left;" valign="top" width="448">Testando o Serviço de DHCP Server em Cliente Windows</td>
+<td style="text-align: left;" valign="top" width="640">Testando o Serviço de DHCP Server em Cliente Windows</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 27</td>
-<td style="text-align: left;" valign="top" width="448">Testando o Serviço de DHCP Server em Cliente GNU/Linux</td>
+<td style="text-align: left;" valign="top" width="640">Testando o Serviço de DHCP Server em Cliente GNU/Linux</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 28</td>
-<td style="text-align: left;" valign="top" width="448">Configurando o Serviço de SSH</td>
+<td style="text-align: left;" valign="top" width="640">Configurando o Serviço de SSH</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 29</td>
-<td style="text-align: left;" valign="top" width="448">Testando a segurança do Serviço do SSH</td>
+<td style="text-align: left;" valign="top" width="640">Testando a segurança do Serviço do SSH</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 30</td>
-<td style="text-align: left;" valign="top" width="448">Instalando o Serviço do Webmin</td>
+<td style="text-align: left;" valign="top" width="640">Instalando o Serviço do Webmin</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 31</td>
-<td style="text-align: left;" valign="top" width="448">Gerenciado o SAMBA4 pelo Webmin</td>
+<td style="text-align: left;" valign="top" width="640">Gerenciado o SAMBA4 pelo Webmin</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 32</td>
-<td style="text-align: left;" valign="top" width="448">Ingressando Máquinas Microsoft Windows XP no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows XP no Domínio SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 33</td>
-<td style="text-align: left;" valign="top" width="448">Ingressando Máquinas Microsoft Windows 7 no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 7 no Domínio SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 34</td>
-<td style="text-align: left;" valign="top" width="448">Ingressando Máquinas Microsoft Windows 8.1 no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 8.1 no Domínio SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 35</td>
-<td style="text-align: left;" valign="top" width="448">Ingressando Máquinas Microsoft Windows 10 no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 10 no Domínio SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 36</td>
-<td style="text-align: left;" valign="top" width="448">Ingressando Máquinas GNU/Linux Ubuntu Desktop no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas GNU/Linux Ubuntu Desktop no Domínio SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 37</td>
-<td style="text-align: left;" valign="top" width="448">Ingressando Máquinas GNU/Linux Mint Desktop no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas GNU/Linux Mint Desktop no Domínio SAMBA4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 38</td>
-<td style="text-align: left;" valign="top" width="448">Instalando o RSAT no Microsoft Windows 7</td>
+<td style="text-align: left;" valign="top" width="640">Instalando o RSAT no Microsoft Windows 7</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 39</td>
-<td style="text-align: left;" valign="top" width="448">Instalando o RSAT no Microsoft Windows 10</td>
+<td style="text-align: left;" valign="top" width="640">Instalando o RSAT no Microsoft Windows 10</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 40</td>
-<td style="text-align: left;" valign="top" width="448">Gerenciando o SAMBA4 pelo RSAT no Windows 7</td>
+<td style="text-align: left;" valign="top" width="640">Gerenciando o SAMBA4 pelo RSAT no Windows 7</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 41</td>
-<td style="text-align: left;" valign="top" width="448">Gerenciando o SAMBA4 pelo samba-tool</td>
+<td style="text-align: left;" valign="top" width="640">Gerenciando o SAMBA4 pelo samba-tool</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 42</td>
-<td style="text-align: left;" valign="top" width="448">Integrando o GNU/Linux com RSAT e NIS</td>
+<td style="text-align: left;" valign="top" width="640">Integrando o GNU/Linux com RSAT e NIS</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 43</td>
-<td style="text-align: left;" valign="top" width="448">Permissões de Disco ACL e ATTR</td>
+<td style="text-align: left;" valign="top" width="640">Permissões de Disco ACL e ATTR</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 44</td>
-<td style="text-align: left;" valign="top" width="448">Criando compartilhamentos no SAMBA4 Básico</td>
+<td style="text-align: left;" valign="top" width="640">Criando compartilhamentos no SAMBA4 Básico</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 45</td>
-<td style="text-align: left;" valign="top" width="448">Acessando o montando os compartilhamentos</td>
+<td style="text-align: left;" valign="top" width="640">Acessando o montando os compartilhamentos</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 46</td>
-<td style="text-align: left;" valign="top" width="448">Finalização e Conclusão</td>
+<td style="text-align: left;" valign="top" width="640">Finalização e Conclusão</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 47</td>
-<td style="text-align: left;" valign="top" width="448">Questionário de Avaliação</td>
+<td style="text-align: left;" valign="top" width="640">Questionário de Avaliação</td>
 </tr>
 </tbody>
 </table>
