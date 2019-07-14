@@ -1,11 +1,11 @@
-# SAMBA-4-L1
-Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.com
+# Curso GRÁTIS DE SAMBA 4-Level 1 (Nível 1)
+Scripts de configuração do SAMBA 4 Level 1 para o projeto do Curso do AulaEAD.com
 
 <a href="http://www.facebook.com/share.php?u=http://aulaead.com/course/curso-linux-samba-4-level-1/" target="_blank"><img class="aligncenter" src="http://aulaead.com/wp-content/uploads/2016/01/botao-compartilhar-facebook.png" alt="Compartilhar no seu Facebook" width="550" height="88" /></a>
 
 <h3 class="widget-title">O QUE VOCÊ VAI APRENDER?</h3>
 <div class="textwidget" align="justify">
-<p style="text-align: justify;">Durante o curso você aprenderá passo a passo na prática a instalar e configurar o software <strong>SAMBA4 Level 1. </strong>O SAMBA-4 em sua nova versão, traz todos os recursos que os profissionais de TI precisar para implementar ou migrar redes Microsoft Windows Server para GNU/Linux, nessa versão é possível criar um AD-DS (Active Directory Domain Controller) completo com o <strong>Schema do Windows Server 2008 R2</strong>, criar e gerenciar Usuários, Grupos, Unidades Organizacionais, Computadores e GPO/GPP <strong>(Group Policy Object/Group Policy Preferences)</strong>, todos os recursos do FSRM <strong>(File Server Resource Manager)</strong> também está disponível para o gerenciamento e auditória de arquivos e diretórios, com uma base de sistema operacional sólida e Open Source, seu projeto de centralização e gerenciamento de usuários na rede será um sucesso!!!.</p>
+<p style="text-align: justify;">Durante o curso você aprenderá passo a passo na prática a instalar e configurar o software <strong>SAMBA4 Level 1. </strong>O SAMBA 4 em sua nova versão, traz todos os recursos que os profissionais de TI precisar para implementar ou migrar redes Microsoft Windows Server para GNU/Linux, nessa versão é possível criar um AD-DS (Active Directory Domain Controller) completo com o <strong>Schema do Windows Server 2008 R2</strong>, criar e gerenciar Usuários, Grupos, Unidades Organizacionais, Computadores e GPO/GPP <strong>(Group Policy Object/Group Policy Preferences)</strong>, todos os recursos do FSRM <strong>(File Server Resource Manager)</strong> também está disponível para o gerenciamento e auditória de arquivos e diretórios, com uma base de sistema operacional sólida e Open Source, seu projeto de centralização e gerenciamento de usuários na rede será um sucesso!!!.</p>
 <p style="text-align: justify;">Ideal para Estudantes e Profissionais que desejam se aprofundar nos conceitos de servidores GNU/Linux Ubuntu Server e implementação de Solução Open Source de Armazenamento e Gerenciamento de Arquivos e Usuários utilizando o <strong>SAMBA-4.</strong></p>
 
 <h3 class="widget-title">PRÉ-REQUISITO</h3>
@@ -31,11 +31,11 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 <tbody>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 1</td>
-<td style="text-align: left;" valign="top" width="640">Abertura do Curso de GNU/Linux SAMBA4 Level 1</td>
+<td style="text-align: left;" valign="top" width="640">Abertura do Curso de GNU/Linux SAMBA 4 Level 1</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 2</td>
-<td style="text-align: left;" valign="top" width="640">Apresentação do Curso Linux SAMBA4 Level 1</td>
+<td style="text-align: left;" valign="top" width="640">Apresentação do Curso Linux SAMBA 4 Level 1</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 3</td>
@@ -55,7 +55,7 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 7</td>
-<td style="text-align: left;" valign="top" width="640">Comparativo entre Active Directory VS SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Comparativo entre Active Directory VS SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 8</td>
@@ -115,15 +115,15 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 22</td>
-<td style="text-align: left;" valign="top" width="640">Instalação do SAMBA4 e suas Dependências</td>
+<td style="text-align: left;" valign="top" width="640">Instalação do SAMBA 4 e suas Dependências</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 23</td>
-<td style="text-align: left;" valign="top" width="640">Provisionando o SAMBA4 como Active Directory Domain Controller</td>
+<td style="text-align: left;" valign="top" width="640">Provisionando o SAMBA 4 como Active Directory Domain Controller</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 24</td>
-<td style="text-align: left;" valign="top" width="640">Pós-Provisionamento do SAMBA4 - Troubleshooting</td>
+<td style="text-align: left;" valign="top" width="640">Pós-Provisionamento do SAMBA 4 - Troubleshooting</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 25</td>
@@ -151,31 +151,31 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 31</td>
-<td style="text-align: left;" valign="top" width="640">Gerenciado o SAMBA4 pelo Webmin</td>
+<td style="text-align: left;" valign="top" width="640">Gerenciado o SAMBA 4 pelo Webmin</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 32</td>
-<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows XP no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows XP no Domínio SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 33</td>
-<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 7 no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 7 no Domínio SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 34</td>
-<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 8.1 no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 8.1 no Domínio SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 35</td>
-<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 10 no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas Microsoft Windows 10 no Domínio SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 36</td>
-<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas GNU/Linux Ubuntu Desktop no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas GNU/Linux Ubuntu Desktop no Domínio SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 37</td>
-<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas GNU/Linux Mint Desktop no Domínio SAMBA4</td>
+<td style="text-align: left;" valign="top" width="640">Ingressando Máquinas GNU/Linux Mint Desktop no Domínio SAMBA 4</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 38</td>
@@ -187,11 +187,11 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 40</td>
-<td style="text-align: left;" valign="top" width="640">Gerenciando o SAMBA4 pelo RSAT no Windows 7</td>
+<td style="text-align: left;" valign="top" width="640">Gerenciando o SAMBA 4 pelo RSAT no Windows 7</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 41</td>
-<td style="text-align: left;" valign="top" width="640">Gerenciando o SAMBA4 pelo samba-tool</td>
+<td style="text-align: left;" valign="top" width="640">Gerenciando o SAMBA 4 pelo samba-tool</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 42</td>
@@ -203,7 +203,7 @@ Scripts de configuração do SAMBA-4 Level 1 para o projeto do Curso do AulaEAD.
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 44</td>
-<td style="text-align: left;" valign="top" width="640">Criando compartilhamentos no SAMBA4 Básico</td>
+<td style="text-align: left;" valign="top" width="640">Criando compartilhamentos no SAMBA 4 Básico</td>
 </tr>
 <tr>
 <td style="text-align: left;" valign="top" width="163">AULA 45</td>
