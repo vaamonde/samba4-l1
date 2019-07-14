@@ -1,10 +1,11 @@
 # Curso GRÁTIS DE SAMBA 4 Level 1 (Nível 1)
 Scripts de configuração do SAMBA 4 Level 1 para o projeto do Curso do AulaEAD.com
+#samba #samba4 #samba-4
 
 <h3 class="widget-title">O QUE VOCÊ VAI APRENDER?</h3>
 <div class="textwidget" align="justify">
 <p style="text-align: justify;">Durante o curso você aprenderá passo a passo na prática a instalar e configurar o software <strong>SAMBA 4 Level 1. </strong>O SAMBA 4 em sua nova versão, traz todos os recursos que os profissionais de TI precisar para implementar ou migrar redes Microsoft Windows Server para GNU/Linux, nessa versão é possível criar um AD-DS (Active Directory Domain Controller) completo com o <strong>Schema do Windows Server 2008 R2</strong>, criar e gerenciar Usuários, Grupos, Unidades Organizacionais, Computadores e GPO/GPP <strong>(Group Policy Object/Group Policy Preferences)</strong>, todos os recursos do FSRM <strong>(File Server Resource Manager)</strong> também está disponível para o gerenciamento e auditória de arquivos e diretórios, com uma base de sistema operacional sólida e Open Source, seu projeto de centralização e gerenciamento de usuários na rede será um sucesso!!!.</p>
-<p style="text-align: justify;">Ideal para Estudantes e Profissionais que desejam se aprofundar nos conceitos de servidores GNU/Linux Ubuntu Server e implementação de Solução Open Source de Armazenamento e Gerenciamento de Arquivos e Usuários utilizando o <strong>SAMBA-4.</strong></p>
+<p style="text-align: justify;">Ideal para Estudantes e Profissionais que desejam se aprofundar nos conceitos de servidores GNU/Linux Ubuntu Server e implementação de Solução Open Source de Armazenamento e Gerenciamento de Arquivos e Usuários utilizando o <strong>SAMBA 4.</strong></p>
 
 <h3 class="widget-title">PRÉ-REQUISITO</h3>
 <p style="text-align: justify;">Desejável conhecimentos básicos em Virtualização, GNU/Linux Ubuntu Desktop, Linux Mint, Debian, Protocolos de Rede TCP/IP e Microsoft Windows Server (qualquer versão). Faça <strong>GRATUITAMENTE</strong> o curso abaixo indicado para adquirir a base necessária para este treinamento.</p>
@@ -13,7 +14,7 @@ Scripts de configuração do SAMBA 4 Level 1 para o projeto do Curso do AulaEAD.
 
 
 <h3 class="widget-title">PÚBLICO ALVO</h3>
-<p style="text-align: justify;">Qualquer pessoa que queira conhecer o <strong>SAMBA4</strong> e suas ferramentas de integrações, focado para usuários intermediários em <strong>GNU/Linux</strong> e <strong>Redes de Computadores</strong> que estão buscando conhecimentos e práticas em cenários de redes para migração ou implementação de servidores de centralização de domínio.</p>
+<p style="text-align: justify;">Qualquer pessoa que queira conhecer o <strong>SAMBA 4</strong> e suas ferramentas de integrações, focado para usuários intermediários em <strong>GNU/Linux</strong> e <strong>Redes de Computadores</strong> que estão buscando conhecimentos e práticas em cenários de redes para migração ou implementação de servidores de centralização de domínio.</p>
 
 <h3 class="widget-title">MATERIAL DIDÁTICO</h3>
 <p style="text-align: justify;">Apostila em formato digital oferecida pelo <strong>Site Procedimentos em TI</strong> em parceria com <strong>AulaEAD.com</strong>, todo o curso possui Vídeo Aulas para facilitar o aprendizado e toda a documentação de ajuda, como script, comandos, help, etc</p>
