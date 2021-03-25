@@ -14,7 +14,7 @@ sudo vim /etc/ntp.conf
 #Descomentar a linha de número 07:
 07	statsdir /var/log/ntpstats
 
-#Alterações dos servidores publicos do projeto ntp.br
+#Alterações dos servidores públicos do projeto ntp.br
 23	server a.st1.ntp.br iburst
 24	server b.st1.ntp.br iburst
 25	server c.st1.ntp.br iburst

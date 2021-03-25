@@ -1,4 +1,17 @@
-# Curso GRÁTIS DE SAMBA 4 Level 1 (Nível 1)
+# Curso GRÁTIS de SAMBA 4 Level 1 (Nível 1)
+
+## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos gratuitos para o Canal, acessando o link de doação do PagSeguro: https://pag.ae/bjlSJcH
+
+Robson Vaamonde<br>
+Procedimentos em TI: http://procedimentosemti.com.br<br>
+Bora para Prática: http://boraparapratica.com.br<br>
+Robson Vaamonde: http://vaamonde.com.br<br>
+Facebook Procedimentos em TI: https://www.facebook.com/ProcedimentosEmTi<br>
+Facebook Bora para Prática: https://www.facebook.com/boraparapratica<br>
+Instagram Procedimentos em TI: https://www.instagram.com/procedimentoem<br>
+YouTUBE Bora Para Prática: https://www.youtube.com/boraparapratica<br>
+LinkedIn Robson Vaamonde: https://www.linkedin.com/in/robson-vaamonde-0b029028/<br>
+
 Scripts de configuração do SAMBA 4 Active Directory Domain Service Open Source Level 1 para o projeto do Curso do AulaEAD.com
 
 <h3 class="widget-title">O QUE VOCÊ VAI APRENDER?</h3>

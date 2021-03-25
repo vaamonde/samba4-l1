@@ -13,8 +13,8 @@ A versão 14.04.5 nas telas iniciais de instalação mudou um pouco, mais essas 
 A versão 14.04.5 utiliza o Kernel na versão 4.4.0-31-generic.
 
 4. Atualização do GNU/Linux Ubuntu Server 14.04.x LTS
-Recomendo utilizar o comando apt (não usar o apt-get),vantagens dele ser mais rápido, mostrar a barra de progração e resolver melhor as dependências;
-Atulização do GRUB, manter o sugerido na tela de manter o arquivo de configuração;
+Recomendo utilizar o comando apt (não usar o apt-get),vantagens dele ser mais rápido, mostrar a barra de progressão e resolver melhor as dependências;
+Atualização do GRUB, manter o sugerido na tela de manter o arquivo de configuração;
 No video de atualização, recomendo fazer o comando: sudo apt dist-upgrade, esse comendo não está no vídeo, logo em seguida fazer um reboot da máquina para verificar se está tudo OK;
 Kernel será atualizado para a versão 4.4.0-135.
 
@@ -29,7 +29,7 @@ Criação do arquivo no Github, instalar o git no servidor com o comando: sudo a
 
 8. Configurando o Endereço de Rede no GNU/Linux Ubuntu Server
 Essa e a parte mais importante, as configurações de redes que será utilizada para todo o cenário, nesse ambiente estou com a placa de rede em Modo Bridge, tenho um router rodando, mais tem que tomar cuidado com o DHCP;
-Ficou faltando fazer a configuração do arquivo /etc/hostname, correto e ter o nome FQDN do seu servidor dentro dele, edita o arquico com o comando: sudo vim /etc/hostname, completa o nome do servidor, no exemplo: ptispo01dc01.pti.intra
+Ficou faltando fazer a configuração do arquivo /etc/hostname, correto e ter o nome FQDN do seu servidor dentro dele, edita o arquivo com o comando: sudo vim /etc/hostname, completa o nome do servidor, no exemplo: ptispo01dc01.pti.intra
 
 9. Instalação do SAMBA-4 Server e suas Dependências
 Criação do arquivo no Github, acessar a pasta com o comando: cd samba4-l1/script, executar o script: sudo sh samba4.sh;
@@ -38,7 +38,7 @@ Informação importante, a versão do SAMBA-4 e a 4.3.11;
 Recomendação que não está no vídeo, fazer a reinicialização do servidor com o comando: sudo reboot.
 
 10. Provisionando o SAMBA-4 Server como Active Directory Domain Controller
-Para parar o serviço do SAMBA, os daemon mudou, correto: sudo serviço smbd stop (fazer duas vezes) e depois: sudo service nmbd stop (fazer duas vezes), checar o statuso com o comando: sudo service samba status, tem que aparecer a linha: stop/waiting;
+Para parar o serviço do SAMBA, os daemon mudou, correto: sudo serviço smbd stop (fazer duas vezes) e depois: sudo service nmbd stop (fazer duas vezes), checar o status com o comando: sudo service samba status, tem que aparecer a linha: stop/waiting;
 Na opção do provisionamento usar a linha: samba-tool domain provision --use-rfc2307 --use-xattrs=yes --interactive, não usar mais a opção: --use-ntvfs pois foi descontinuada nas novas versões, gerando problemas de permissão;
 
 11. Pós-Provisionamento do SAMBA-4 Server - Troubleshooting
