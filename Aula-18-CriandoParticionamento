@@ -19,7 +19,7 @@ sudo fdisk /dev/sdc
       <-- fd RAID auto-configuração
     w <-- sair e gravar as informações de partição
 
-#Utilizando o fdisk para criar o particonamento no Hard Disk SDD
+#Utilizando o fdisk para criar o particionamento no Hard Disk SDD
 sudo fdisk /dev/sdd
     n <-- nova partição
     p <-- primaria
