@@ -1,3 +1,5 @@
+# REPOSITÓRIO "CONGELADO" - Esse repositório não irá mais receber atualizações.
+
 # Curso GRÁTIS de SAMBA 4 Level 1 (Nível 1)
 
 ## 💰 Ajude o projeto Bora para Prática a continuar fazendo vídeos gratuitos para o Canal, acessando o link de doação do PagSeguro: https://pag.ae/bjlSJcH
